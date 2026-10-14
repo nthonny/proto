@@ -1,11 +1,12 @@
-// Products array: 6 products minimum with id, name, category, price
+// Products array with prices converted to Philippine Peso (PHP ₱)
+// Converted at ~59.50 PHP per USD rate
 const products = [
-    { id: 1, name: "Perception 7mm Performance", category: "Running", price: "$95.00" },
-    { id: 2, name: "Pursuit 9mm All-Terrain", category: "Trail", price: "$105.00" },
-    { id: 3, name: "Alpha Daily Cruiser", category: "Daily", price: "$80.00" },
-    { id: 4, name: "Enigma Rugged Mountain", category: "Trail", price: "$115.00" },
-    { id: 5, name: "Intuition River Sandal", category: "Water", price: "$90.00" },
-    { id: 6, name: "Alchemy Urban Minimalist", category: "Daily", price: "$85.00" }
+    { id: 1, name: "Elite Alpha 7mm Performance", category: "Running", price: "₱5,650.00" },
+    { id: 2, name: "TrailStar Ultra 12mm All-Terrain", category: "Trail", price: "₱6,250.00" },
+    { id: 3, name: "Warrior Daily Cruiser", category: "Daily", price: "₱4,760.00" },
+    { id: 4, name: "Mountain Mud Master", category: "Trail", price: "₱6,840.00" },
+    { id: 5, name: "Ibex River Grip Sandal", category: "Water", price: "₱5,355.00" },
+    { id: 6, name: "Lizard Urban Minimalist", category: "Daily", price: "₱5,050.00" }
 ];
 
 // Display function: Renders products to #productGrid
@@ -38,7 +39,6 @@ function setupFilters() {
 
     filterButtons.forEach(button => {
         button.addEventListener('click', (e) => {
-            // Update active states
             filterButtons.forEach(btn => btn.classList.remove('active'));
             e.target.classList.add('active');
 
@@ -72,22 +72,22 @@ function setupQuiz() {
         let recommendation = '';
         switch(selectedActivity) {
             case 'Daily':
-                recommendation = 'Recommended for you: Alpha Daily Cruiser or Alchemy Urban Minimalist.';
+                recommendation = 'Recommended for you: Warrior Daily Cruiser or Lizard Urban Minimalist.';
                 break;
             case 'Trail':
-                recommendation = 'Recommended for you: Pursuit 9mm All-Terrain or Enigma Rugged Mountain.';
+                recommendation = 'Recommended for you: TrailStar Ultra 12mm or Mountain Mud Master.';
                 break;
             case 'Running':
-                recommendation = 'Recommended for you: Perception 7mm Performance.';
+                recommendation = 'Recommended for you: Elite Alpha 7mm Performance.';
                 break;
             case 'Water':
-                recommendation = 'Recommended for you: Intuition River Sandal.';
+                recommendation = 'Recommended for you: Ibex River Grip Sandal.';
                 break;
             default:
-                recommendation = 'Recommended for you: Pursuit 9mm All-Terrain.';
+                recommendation = 'Recommended for you: TrailStar Ultra 12mm All-Terrain.';
         }
 
-        quizResult.style.color = '#27ae60';
+        quizResult.style.color = '#8c3b1e';
         quizResult.textContent = recommendation;
     });
 }
@@ -129,10 +129,10 @@ function setupContactForm() {
         formFeedback.textContent = message;
         if (type === 'error') {
             formFeedback.style.color = '#e74c3c';
-            alert(message); // Displays popup alert for error as required
+            alert(message);
         } else {
             formFeedback.style.color = '#27ae60';
-            alert(message); // Displays popup alert for success as required
+            alert(message);
         }
     }
 }

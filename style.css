@@ -12,12 +12,12 @@ body {
     line-height: 1.6;
 }
 
-/* Header & Horizontal Navigation (Flexbox 1) */
+/* Header & Horizontal Navigation (Flexbox) */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1a1a1a;
+    background-color: #262220; /* Deep earthy dark tone */
     color: #fff;
     padding: 1rem 5%;
     position: sticky;
@@ -37,14 +37,14 @@ nav {
 }
 
 nav a {
-    color: #ccc;
+    color: #d1c7bc;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #fff;
+    color: #ffffff;
 }
 
 /* Sections General */
@@ -52,26 +52,29 @@ section {
     padding: 4rem 5%;
 }
 
+/* Shamma Sandals Banner Background Inspiration (Rugged Redwood Forest / Outdoor Vibe) */
 .hero-section {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
     color: #fff;
     text-align: center;
-    padding: 6rem 5%;
+    padding: 7rem 5%;
 }
 
 .hero-content h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 .hero-content p {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     margin-bottom: 2rem;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 .cta-button {
     display: inline-block;
-    background-color: #ff5722;
+    background-color: #8c3b1e; /* Shamma Rust/Brown Accent */
     color: white;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
@@ -81,24 +84,25 @@ section {
 }
 
 .cta-button:hover {
-    background-color: #e64a19;
+    background-color: #702e17;
 }
 
 /* Quiz Feature Widget */
 .quiz-container {
     max-width: 500px;
-    margin: 3rem auto 0 auto;
+    margin: 3.5rem auto 0 auto;
     background: rgba(255, 255, 255, 0.95);
     color: #222;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     text-align: left;
 }
 
 .quiz-container h2 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
+    color: #262220;
 }
 
 .quiz-container select {
@@ -110,7 +114,7 @@ section {
 }
 
 .quiz-container button {
-    background-color: #2c3e50;
+    background-color: #262220;
     color: white;
     border: none;
     padding: 0.6rem 1.2rem;
@@ -120,13 +124,13 @@ section {
 }
 
 .quiz-container button:hover {
-    background-color: #1a252f;
+    background-color: #403834;
 }
 
 .quiz-result {
     margin-top: 1rem;
     font-weight: 600;
-    color: #d35400;
+    color: #8c3b1e;
 }
 
 /* Products Section & Grid Layout */
@@ -138,6 +142,7 @@ section {
 .products-section h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
+    color: #262220;
 }
 
 .filter-buttons {
@@ -150,20 +155,21 @@ section {
 
 .filter-btn {
     padding: 0.5rem 1rem;
-    background-color: #e0e0e0;
+    background-color: #eae5e0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-weight: 500;
+    color: #444;
     transition: all 0.2s;
 }
 
 .filter-btn:hover, .filter-btn.active {
-    background-color: #2c3e50;
+    background-color: #8c3b1e;
     color: #fff;
 }
 
-/* Grid: display: grid used for products */
+/* Grid: display: grid */
 #productGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -175,7 +181,7 @@ section {
 /* Product Cards Styling */
 .product-card {
     background: #fff;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #e0dad3;
     border-radius: 6px;
     padding: 1.5rem;
     text-align: left;
@@ -194,26 +200,27 @@ section {
 .product-card h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: #111;
+    color: #262220;
 }
 
 .product-card .category {
     font-size: 0.85rem;
-    color: #7f8c8d;
+    color: #8c3b1e;
     text-transform: uppercase;
+    font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
 .product-card .price {
     font-size: 1.1rem;
     font-weight: 700;
-    color: #e67e22;
+    color: #333;
     margin-top: 1rem;
 }
 
 /* Contact Section & Form Inputs Styling */
 .contact-section {
-    background-color: #f4f4f4;
+    background-color: #f4efe9;
     max-width: 700px;
     margin: 0 auto;
     border-radius: 8px;
@@ -223,6 +230,7 @@ section {
 .contact-section h2 {
     text-align: center;
     margin-bottom: 0.5rem;
+    color: #262220;
 }
 
 .contact-section p {
@@ -239,6 +247,7 @@ section {
     display: block;
     margin-bottom: 0.4rem;
     font-weight: 500;
+    color: #262220;
 }
 
 .contact-section input,
@@ -254,12 +263,12 @@ section {
 .contact-section input:focus,
 .contact-section textarea:focus {
     outline: none;
-    border-color: #2c3e50;
+    border-color: #8c3b1e;
 }
 
 .submit-btn {
     width: 100%;
-    background-color: #2c3e50;
+    background-color: #8c3b1e;
     color: white;
     padding: 0.75rem;
     border: none;
@@ -271,7 +280,7 @@ section {
 }
 
 .submit-btn:hover {
-    background-color: #1a252f;
+    background-color: #702e17;
 }
 
 #formFeedback {
@@ -282,14 +291,14 @@ section {
 
 /* Footer Style */
 footer {
-    background-color: #1a1a1a;
-    color: #888;
+    background-color: #262220;
+    color: #a89f95;
     text-align: center;
     padding: 1.5rem;
     font-size: 0.9rem;
 }
 
-/* Media Queries (3 Minimum required) */
+/* Media Queries (3 Minimum) */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
