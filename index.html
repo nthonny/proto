@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliberate Life Minimalist Sandals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Semantic Tag 1: header -->
+    <header>
+        <div class="logo">DLD Inspired</div>
+        <!-- Semantic Tag 2: nav -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Semantic Tag 3: main -->
+    <main>
+        <!-- Section 1: #home -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>High-Performance Minimalist Sandals</h1>
+                <p>Engineered for trail running, backpacking, water adventures, and everyday freedom.</p>
+                <a href="#quiz" class="cta-button">Find Your Sandal</a>
+            </div>
+
+            <!-- Interactive Feature: "Which sandal is right for me?" Finder Widget -->
+            <div id="quiz" class="quiz-container">
+                <h2>Which Sandal Is Right For Me?</h2>
+                <p>Answer a quick question to find your ideal match:</p>
+                <label for="activitySelect">Select your primary activity:</label>
+                <select id="activitySelect">
+                    <option value="all">-- Choose Activity --</option>
+                    <option value="Daily">Everyday Use / Casual Walks</option>
+                    <option value="Trail">Hiking / Rugged Trails</option>
+                    <option value="Running">Trail Running / High Intensity</option>
+                    <option value="Water">Water Sports / River Crossings</option>
+                </select>
+                <button id="quizSubmitBtn" type="button">Get Recommendation</button>
+                <div id="quizResult" class="quiz-result"></div>
+            </div>
+        </section>
+
+        <!-- Section 2: #products -->
+        <section id="products" class="products-section">
+            <h2>Our Sandal Collection</h2>
+            
+            <!-- 4 Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Models</button>
+                <button class="filter-btn" data-filter="Daily">Daily / Casual</button>
+                <button class="filter-btn" data-filter="Trail">Trail & Hiking</button>
+                <button class="filter-btn" data-filter="Running">Running</button>
+            </div>
+
+            <!-- Product Grid Container -->
+            <div id="productGrid"></div>
+        </section>
+
+        <!-- Section 3: #contact -->
+        <section id="contact" class="contact-section">
+            <h2>Get in Touch</h2>
+            <p>Have questions about custom sizing or fit? Drop us a message.</p>
+            
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="Enter your email address">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="4" placeholder="How can we help your feet?"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div id="formFeedback"></div>
+        </section>
+    </main>
+
+    <!-- Semantic Tag 5: footer -->
+    <footer>
+        <p>&copy; 2026 Deliberate Life Designs Inspired. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
